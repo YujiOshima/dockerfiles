@@ -24,12 +24,12 @@ class MyHandler(SimpleHTTPRequestHandler):
 
 def judge_reponce(cid):
     intid = int(hostname, 16)
-    if intid % 3 == 0:
-        return "zun"
-    elif intid % 3 == 1:
+    if intid % 5 == 0:
+        return "**kiyoshi**"
+    elif intid % 5 == 1:
         return "doko"
     else:
-        return "**kiyoshi**"
+        return "zun"
 
 host = '0.0.0.0'
 port = 8000
